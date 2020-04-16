@@ -21,8 +21,12 @@ project.lock.json
 project.assets.json
 
 #bin and object
-bin
-obj
+Diagnostic/bin
+Diagnostic/obj
+DiagnosticConsole/bin
+DiagnosticConsole/obj
+DiagnosticTest/bin
+DiagnosticTest/obj
 
 
 # please note that in order to remove something already pushed
