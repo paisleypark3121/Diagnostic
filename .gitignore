@@ -23,3 +23,7 @@ project.assets.json
 #bin and object
 bin
 obj
+
+
+# please note that in order to remove something already pushed
+# it is necessary to use the command: git rm -r --cached FOLDER_TO_BE_REMOVED
