@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostic", "Diagnostic\Diagnostic.csproj", "{207128AB-C073-4E89-986D-B69C39FA3FBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagnosticTest", "DiagnosticTest\DiagnosticTest.csproj", "{C280CCD1-CECB-494F-B9B9-26403999BD81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagnosticTest", "Diagnostic.Test\DiagnosticTest.csproj", "{C280CCD1-CECB-494F-B9B9-26403999BD81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagnosticConsole", "DiagnosticConsole\DiagnosticConsole.csproj", "{9022F337-59B6-4F95-BCC7-8C6FD07AF044}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagnosticConsole", "Diagnostic.Console\DiagnosticConsole.csproj", "{9022F337-59B6-4F95-BCC7-8C6FD07AF044}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

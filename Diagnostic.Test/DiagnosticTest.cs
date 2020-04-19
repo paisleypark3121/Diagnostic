@@ -71,7 +71,7 @@ namespace DiagnosticTest
         public void AppInsightSimpleMessageTest()
         {
             #region arrange
-            ITrace trace = new ApplicationInsightsTrace();
+            IDiagnostic trace = new ApplicationInsightsTrace();
             string message = "ciao";
             #endregion
 
@@ -113,6 +113,23 @@ namespace DiagnosticTest
             Assert.AreEqual(expected_dictionary.Count, actual_dictionary.Count);
             foreach (var entry in actual_dictionary)
                 Assert.AreEqual(expected_dictionary[entry.Key], entry.Value);
+            #endregion
+        }
+
+        [TestMethod]
+        public void ConsoleTest()
+        {
+            #region arrange
+            string message = "Hello World";
+            #endregion
+
+            #region act
+            IDiagnostic trace = new ConsoleTrace();
+            trace.trace(message);
+            #endregion
+
+            #region assert
+            Assert.IsTrue(true);
             #endregion
         }
     }

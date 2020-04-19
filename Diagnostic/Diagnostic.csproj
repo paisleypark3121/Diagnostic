@@ -84,7 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationInsightsTrace.cs" />
-    <Compile Include="ITrace.cs" />
+    <Compile Include="DiagnosticTrace.cs" />
+    <Compile Include="ConsoleTrace.cs" />
+    <Compile Include="IDiagnostic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

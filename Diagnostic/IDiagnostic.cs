@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Diagnostic
 {
-    public interface ITrace
+    public interface IDiagnostic
     {
         void trace(string message);
         void traceError(string message);

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Diagnostic
 {
-    public class ApplicationInsightsTrace : ITrace
+    public class ApplicationInsightsTrace : IDiagnostic
     {
         TelemetryClient client;
 

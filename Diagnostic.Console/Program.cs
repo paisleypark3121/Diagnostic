@@ -11,7 +11,14 @@ namespace DiagnosticConsole
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void mainConsole()
+        {
+            IDiagnostic trace = new ConsoleTrace();
+            trace.trace("Hello World");
+
+        }
+
+        public static void mainApplicationInsights()
         {
             //_ = TelemetryConfiguration.Active;
             //TelemetryConfiguration configuration = TelemetryConfiguration.Active;
@@ -22,15 +29,21 @@ namespace DiagnosticConsole
             ApplicationInsightsTrace trace = new ApplicationInsightsTrace();
             trace.trace("try again....");
 
-            for (int i=0;i<100;i++)
-            {   
+            for (int i = 0; i < 100; i++)
+            {
                 Console.WriteLine(i);
-                trace.trace("try again...."+i);
+                trace.trace("try again...." + i);
                 System.Threading.Thread.Sleep(500);
             }
 
             System.Threading.Thread.Sleep(10000);
             Console.WriteLine("END");
+        }
+
+        static void Main(string[] args)
+        {
+            //mainApplicationInsights();
+            mainConsole();
         }
     }
 }
